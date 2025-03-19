@@ -1,0 +1,217 @@
+{
+    "headers": [
+        "How to Obtain More Information",
+        "About this Compilation",
+        "Purpose of this Document",
+        "Definitions and Concepts",
+        "Data Overview",
+        "General Methodology",
+        "Limitations",
+        "Comparison to Other Sources",
+        "Integration with Other Datasets",
+        "Record Layouts and Data Descriptions",
+        "Overview",
+        "Sample Dataset Attributes",
+        "Status Codes",
+        "User Type Codes",
+        "Document Versioning",
+        "Approval and Review"
+    ],
+    "content": {
+        "null": "Data001Created July 2022",
+        "How to Obtain More Information": " For more information about this Codebook or other services and data available from the abcd..  contact us in any of the following ways:",
+        "Purpose of this Document": " This reference guide is designed for users of the XYD-DataSet-01 collection, provided by the Bureau of Structured Archives. It offers an overview of the dataset, the methodology applied during its creation, and essential technical details, including structural components and attribute explanations. This document is continuously evolving and will be updated when modifications occur in the underlying data framework. This dataset is provided \"as is,\" and the Bureau of Structured Archives makes no guarantees, explicit or implied, including but not limited to warranties of functionality or suitability for any specific application. The Bureau holds no liability for any direct, incidental, consequential, or other damages, regardless of cause.",
+        "Definitions and Concepts": " Due to the complex nature of compiled data, there may be instances where attribute names differ from their conceptual definitions. In such cases, the definition should be considered the most accurate interpretation. Record – A record is created when an entity meets specified criteria within the dataset framework (see Methodology). Classification – Classification represents the grouping of specific attributes based on a predefined coding system. XYZ Index – A structured typology used for categorical assignment within this dataset. It is based on an external standard and may vary across versions. Operation Tag – A reference to the structured action applied to data within the compiled system.",
+        "Data Overview": " The XYD-DataSet-01 contains instance-based records extracted from multiple archival sources, estimating trends and occurrences within the defined scope.",
+        "General Methodology": " Information within the XYD-DataSet-01 is aggregated from a collection of stored transactional logs, including operational entries, archival reports, and structured databases maintained by the Bureau of Structured Archives. Standardized computational procedures are applied to classify entries based on defined conditions. For classification, an entity is assigned a category if it meets predefined thresholds based on analytical conditions. Certain exclusions apply, ensuring that outlier conditions do not interfere with structured assessments.",
+        "Limitations": " Due to phased adoption and varying reporting protocols, completeness for earlier years may be inconsistent. Additionally, certain classification algorithms relying on unstructured textual inputs may exhibit variability.",
+        "Comparison to Other Sources": " Entries in the XYD-DataSet-01 are derived from multiple data streams, including transactional archives and categorical logs. They share computational similarities with other structured datasets related to various indexed classifications.",
+        "Integration with Other Datasets": " If applicable."
+    },
+    "tables": [
+        {
+            "table_name": "Overview",
+            "table_data": [
+                [
+                    "#",
+                    "Title",
+                    "Category",
+                    "Attributes"
+                ],
+                [
+                    "1",
+                    "Sample Dataset",
+                    "",
+                    "14"
+                ]
+            ]
+        },
+        {
+            "table_name": "Sample Dataset Attributes",
+            "table_data": [
+                [
+                    "#",
+                    "Attribute Name",
+                    "Label",
+                    "Data Type"
+                ],
+                [
+                    "1",
+                    "Timestamp",
+                    "Entry Timestamp",
+                    "Numeric"
+                ],
+                [
+                    "2",
+                    "Ref_Code",
+                    "Reference Code",
+                    "String"
+                ],
+                [
+                    "3",
+                    "Log_Year",
+                    "Logging Year",
+                    "Numeric"
+                ],
+                [
+                    "4",
+                    "Status_Code",
+                    "Current Status",
+                    "String"
+                ],
+                [
+                    "5",
+                    "Event_Year",
+                    "Event Year",
+                    "Numeric"
+                ],
+                [
+                    "6",
+                    "Status_Flag",
+                    "Active Flag",
+                    "String"
+                ],
+                [
+                    "7",
+                    "Session_ID",
+                    "Session Code",
+                    "String"
+                ],
+                [
+                    "8",
+                    "User_Type",
+                    "User Category",
+                    "String"
+                ],
+                [
+                    "9",
+                    "Expiry_Date",
+                    "Expiration Date",
+                    "Date"
+                ],
+                [
+                    "10",
+                    "Deactivation_TS",
+                    "Deactivation Time",
+                    "Date"
+                ],
+                [
+                    "11",
+                    "Flagged_Status",
+                    "Flagged Entry",
+                    "String"
+                ],
+                [
+                    "12",
+                    "Age_Group",
+                    "Age Category",
+                    "Numeric"
+                ],
+                [
+                    "13",
+                    "Term_Year",
+                    "Termination Year",
+                    "Numeric"
+                ],
+                [
+                    "14",
+                    "unique_id",
+                    "",
+                    "String"
+                ]
+            ]
+        },
+        {
+            "table_name": "Status Codes",
+            "table_data": [
+                [
+                    "Code",
+                    "Meaning - English",
+                    "Meaning - Other"
+                ],
+                [
+                    "A",
+                    "Active",
+                    ""
+                ],
+                [
+                    "X",
+                    "Inactive",
+                    ""
+                ]
+            ]
+        },
+        {
+            "table_name": "User Type Codes",
+            "table_data": [
+                [
+                    "Code",
+                    "Meaning - English",
+                    "Meaning - Other"
+                ],
+                [
+                    "1",
+                    "Admin",
+                    ""
+                ],
+                [
+                    "2",
+                    "Guest",
+                    ""
+                ]
+            ]
+        },
+        {
+            "table_name": "Document Versioning",
+            "table_data": [
+                [
+                    "Version",
+                    "Author",
+                    "Change Description",
+                    "Date"
+                ],
+                [
+                    "1.0",
+                    "Alex Doe",
+                    "Initial Draft",
+                    "02-14-2023"
+                ]
+            ]
+        },
+        {
+            "table_name": "Approval and Review",
+            "table_data": [
+                [
+                    "Approved By",
+                    "Approval Date",
+                    "Next Review Date"
+                ],
+                [
+                    "Admin Team",
+                    "March 1, 2023",
+                    "June 1, 2024"
+                ]
+            ]
+        }
+    ]
+}
