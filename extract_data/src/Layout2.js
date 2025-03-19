@@ -1,25 +1,9 @@
-import {
-    Box,
-    Button,
-    Card,
-    CardContent,
-    CircularProgress,
-    Container,
-    Paper,
-    Tab,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableRow,
-    Tabs,
-    Typography,
-} from "@mui/material";
+import {Box,Button,Card,CardContent,CircularProgress,Container,Paper, Tab,Table,TableBody,TableCell,
+TableContainer,TableRow,Tabs,Typography,} from "@mui/material";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
-// import "./Layout2.css";
 
 function Layout2() {
   const [data, setData] = useState(null);
@@ -50,7 +34,7 @@ function Layout2() {
         transition={{ duration: 0.6 }}
       >
         <Typography variant="h3" className="title">
-          JSON Data Viewer
+          Alternate Data View
         </Typography>
       </motion.div>
 

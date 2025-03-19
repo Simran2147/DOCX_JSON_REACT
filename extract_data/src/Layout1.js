@@ -1,24 +1,9 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import {
-    Accordion,
-    AccordionDetails,
-    AccordionSummary,
-    Box, Button,
-    Card,
-    CardContent,
-    CircularProgress,
-    Container,
-    Paper,
-    Tab,
-    Table, TableBody, TableCell, TableContainer,
-    TableRow,
-    Tabs,
-    Typography,
-} from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary,Box, Button,Card,CardContent,CircularProgress,Container,Paper,
+  Tab,Table, TableBody, TableCell, TableContainer,TableRow,Tabs,Typography,} from "@mui/material";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-// import "./Layout1.css";
 
 function Layout1() {
     const navigate = useNavigate(); // Hook for navigation
@@ -41,7 +26,7 @@ function Layout1() {
 
     return (
         <Container maxWidth="lg">
-            <Typography variant="h4" sx={{ mt: 3, mb: 2, fontWeight: "bold" }}>
+            <Typography variant="h3" className="title">
                 JSON Data Viewer
             </Typography>
 
@@ -61,7 +46,7 @@ function Layout1() {
                         <Box key={key} sx={{ mb: 3 }}>
                             <Accordion>
                                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                                    <Typography variant="h6" sx={{ fontWeight: index === 0 ? "Semi-bold" : "normal" }}>
+                                    <Typography variant="h6" sx={{ fontWeight: index === 0 ? "bold" : "bold" }}>
                                         {index === 0 ? "Data001" : key}
                                     </Typography>
                                 </AccordionSummary>
@@ -108,19 +93,17 @@ function Layout1() {
           ))}
         </Box>
       )}
-
-
             {/* Button to navigate to Layout2 */}
-            <Button 
+            <Box sx={{ textAlign: "center", mt: 4 }}>
+              <Button 
                 variant="contained" 
                 color="primary" 
-                sx={{ mt: 3 }} 
+                fontWeight="bold"
                 onClick={() => navigate("/another")} 
-                fullWidth
             >
                 I want to see a new one
             </Button>
-
+          </Box>
         </Container>
     );
 }
